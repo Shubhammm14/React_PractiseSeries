@@ -6,6 +6,7 @@ const reactElement={
     },
     children:'click me to visit google'
 }
+
 function customRender(reactElement,container){
     // const domElement=document.createElement(reactElement.type)
     // domElement.innerHTML=reactElement.children
@@ -22,6 +23,7 @@ function customRender(reactElement,container){
     }
     container.appendChild(domElement)
 }
+
 const mainContainer=document.getElementById('root')
 
 
