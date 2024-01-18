@@ -15,6 +15,12 @@ function App() {
     console.log("value added")
     //counter++;
     setCounter(counter+1)
+    // setCounter((prevCounter)=>prevCounter+1)16
+    // setCounter((prevCounter)=>prevCounter+1)17
+    // setCounter((prevCounter)=>prevCounter+1)18
+    // setCounter((prevCounter)=>prevCounter+1)19
+    // setCounter((prevCounter)=>prevCounter+1)20
+
   }
 
   return (
