@@ -1,16 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Index from './componennt/Image-Slider/Index';
+import Fedex from './componennt/Load-more-Data/Fedex'; // Correct casing and extension
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     {/* <Index/> */}
-    <Index url={'https://picsum.photos/v2/list'} limit={10}/>
-  </React.StrictMode>
+    <Fedex />
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
