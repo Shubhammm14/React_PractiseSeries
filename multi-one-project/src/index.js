@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Index from './componennt/Image-Slider/Index';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <Index/> */}
+    <Index url={'https://picsum.photos/v2/list'} limit={10}/>
   </React.StrictMode>
 );
 
