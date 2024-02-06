@@ -31,7 +31,7 @@ const QrCode = () => {
                     <QRCode
                         id='qr-value'
                         value={qrData}
-                        size={256}
+                        size={300}
                     />
                 )}
             </div>
