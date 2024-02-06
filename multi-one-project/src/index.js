@@ -4,11 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Fedex from './componennt/Load-more-Data/Fedex'; // Correct casing and extension
+import QrCode from './componennt/Qr-code-Generator/QrCode';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <Index/> */}
-    <Fedex />
+    {/* <Fedex /> */}
+    <QrCode/>
   </React.StrictMode>,
   document.getElementById('root')
 );
