@@ -1,17 +1,21 @@
 import React, { useState } from 'react';
 import QRCode from 'react-qr-code';
+import CustomHook from './CustomHook';
 
 const QrCode = () => {
     const [input, setInput] = useState('');
     const [qrData, setQrData] = useState('');
-
+    const [theme,setTheme]=CustomHook('theme','red')
+    const changetheme=()=>{
+       theme==='red'?setTheme('yellow'):setTheme('red')
+    }
     const handleInput = () => {
         setQrData(input);
     };
 
     return (
         <div className='flex'>
-            <div className='w-[50vw] h-[100vh] items-center justify-center bg-red-700 flex flex-col'>
+            <div className='w-[50vw] h-[100vh] items-center justify-center  flex flex-col' style={{backgroundColor:theme}}>
                 <div className='text-5xl'>
                     Qr-Generator
                 </div>
@@ -25,6 +29,9 @@ const QrCode = () => {
                         Generate
                     </button>
                 </div>
+                <button onClick={changetheme} className='bg-white rounded-lg p-2'>
+                    Click to change theme
+                </button>
             </div>
             <div className='flex items-center justify-center w-[50vw]'>
                 {qrData && (
