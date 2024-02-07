@@ -8,6 +8,7 @@ import QrCode from './componennt/Qr-code-Generator/QrCode';
 import Index from './componennt/Search-autocomplete/Index';
 import { TabsParent } from './componennt/Tab-Render/TabsParent';
 import ModalRender from './componennt/Modal-Popup/ModalRender';
+import GameBoard from './componennt/Tik-Tak-Toe/GameBoard';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,7 +18,8 @@ ReactDOM.render(
     {/* <Index/> */}
     {/* <TabsParent/> */}
     {/* <ModalRender/> */}
-    <Index/>
+    {/* <Index/> */}
+    <GameBoard/>
   </React.StrictMode>,
   document.getElementById('root')
 );
