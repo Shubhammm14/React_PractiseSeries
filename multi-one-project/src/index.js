@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Fedex from './componennt/Load-more-Data/Fedex'; // Correct casing and extension
 import QrCode from './componennt/Qr-code-Generator/QrCode';
-import Index from './componennt/scrollbarIndicator/Index';
+import Index from './componennt/Git-hub-apiHAndle/Index';
 import { TabsParent } from './componennt/Tab-Render/TabsParent';
 import ModalRender from './componennt/Modal-Popup/ModalRender';
 
@@ -16,7 +16,8 @@ ReactDOM.render(
     {/* <QrCode/> */}
     {/* <Index/> */}
     {/* <TabsParent/> */}
-    <ModalRender/>
+    {/* <ModalRender/> */}
+    <Index/>
   </React.StrictMode>,
   document.getElementById('root')
 );
