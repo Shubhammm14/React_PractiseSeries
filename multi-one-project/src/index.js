@@ -6,13 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import Fedex from './componennt/Load-more-Data/Fedex'; // Correct casing and extension
 import QrCode from './componennt/Qr-code-Generator/QrCode';
 import Index from './componennt/scrollbarIndicator/Index';
+import { TabsParent } from './componennt/Tab-Render/TabsParent';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <Index/> */}
     {/* <Fedex /> */}
     {/* <QrCode/> */}
-    <Index/>
+    {/* <Index/> */}
+    <TabsParent/>
   </React.StrictMode>,
   document.getElementById('root')
 );

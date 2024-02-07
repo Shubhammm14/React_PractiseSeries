@@ -45,7 +45,7 @@ const Index = () => {
     if (error) {
         return <div>{error.toString()}</div>;
     }
-
+    
     return (
         <div className='flex flex-col items-center justify-center'>
             <div className='fixed top-0 left-0 right-0 bg-gray-200'>
