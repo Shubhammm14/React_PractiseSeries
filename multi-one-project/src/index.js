@@ -7,6 +7,7 @@ import Fedex from './componennt/Load-more-Data/Fedex'; // Correct casing and ext
 import QrCode from './componennt/Qr-code-Generator/QrCode';
 import Index from './componennt/scrollbarIndicator/Index';
 import { TabsParent } from './componennt/Tab-Render/TabsParent';
+import ModalRender from './componennt/Modal-Popup/ModalRender';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,7 +15,8 @@ ReactDOM.render(
     {/* <Fedex /> */}
     {/* <QrCode/> */}
     {/* <Index/> */}
-    <TabsParent/>
+    {/* <TabsParent/> */}
+    <ModalRender/>
   </React.StrictMode>,
   document.getElementById('root')
 );
