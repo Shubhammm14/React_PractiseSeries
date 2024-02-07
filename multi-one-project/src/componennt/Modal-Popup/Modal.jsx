@@ -1,11 +1,13 @@
 import React from 'react';
 import '../Modal-Popup/Style.css'
-const Modal = ({ header, body, footer }) => {
+const Modal = ({ header, body, footer,onclick }) => {
   return (
-    <div className='flex items-center'>
-      <div></div>
-      <div className=''>
+    <div className=''>
+    
+        <div className='w-[70vw] h-[70vh] flex flex-col items-center '>
+   
         <div className='w-[70vw] h-[70vh] bg-green-800'>
+
           <div className='h-[30%] w-[100%] text-5xl text-bold p-10'>
             {header ? header : 'customised-header'}
           </div>
@@ -16,6 +18,7 @@ const Modal = ({ header, body, footer }) => {
             {footer ? footer : 'cutomised footer'}
           </div>
         </div>
+        <div><button className='bg-green-700 p-2 m-4 w-[10vw] rounded-lg text-green-300' onClick={onclick}> back</button></div>
       </div>
     </div>
   );
