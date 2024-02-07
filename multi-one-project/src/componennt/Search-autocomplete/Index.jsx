@@ -4,11 +4,21 @@ const Index = () => {
     const [input, setInput] = useState('');
     const [data, setData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
-
+    const [loading,setLoading]=useState(false)
+    const [error,setError]=useState(null)
     const fetchData = async () => {
-        const res = await fetch(`https://dummyjson.com/users/`);
-        const dat = await res.json();
-        setData(dat.users.map((user) => user.firstName));
+
+        try {
+            setLoading(true)
+            const res = await fetch(`https://dummyjson.com/users/`);
+            const dat = await res.json();
+            setData(dat.users.map((user) => user.firstName));
+        } catch (error) {
+         setError(error)   
+        }finally{
+            setLoading(false)
+        }
+       
     };
 
     const filterData = () => {
@@ -22,7 +32,10 @@ const Index = () => {
     useEffect(() => {
         fetchData();
     }, []);
-
+   if(loading)
+   return <div>connecting</div>
+   if(error)
+   return <div>{String(error)}</div>
     return (
         <div className='flex flex-col items-center'>
             <div className='m-5 w-full flex justify-center'>
