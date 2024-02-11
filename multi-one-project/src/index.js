@@ -9,7 +9,9 @@ import Index from './componennt/Search-autocomplete/Index';
 import { TabsParent } from './componennt/Tab-Render/TabsParent';
 import ModalRender from './componennt/Modal-Popup/ModalRender';
 import GameBoard from './componennt/Tik-Tak-Toe/GameBoard';
-
+import Test from './componennt/WindowResiZe/Test';
+import OnClickOutsideTest from './componennt/onClickOutsideHook/Test';
+import Section from './componennt/Scroll-to/SCroll-section';
 ReactDOM.render(
   <React.StrictMode>
     {/* <Index/> */}
@@ -19,7 +21,10 @@ ReactDOM.render(
     {/* <TabsParent/> */}
     {/* <ModalRender/> */}
     {/* <Index/> */}
-    <GameBoard/>
+    {/* <GameBoard/> */}
+    {/* <OnClickOutsideTest/> */}
+    {/* <Test/> */}
+    <Section/>
   </React.StrictMode>,
   document.getElementById('root')
 );
